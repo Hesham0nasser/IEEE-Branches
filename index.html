@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="images/ieee.jpg">
+  <link rel="apple-touch-icon" href="images/ieee.jpg">
+  <link href="jqueryMobile/jquery.mobile-1.4.5.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="jqueryMobile/jquery.mobile-1.4.5.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+<body>
+
+  <!-- Regions Page -->
+  <div data-role="page" id="regionPage">
+    <div data-role="header" data-position="fixed">
+      <h2>IEEE Regions</h2>
+    </div>
+    <div data-role="main" class="ui-content">
+      <form class="ui-filterable">
+        <input id="region" data-type="search" placeholder="Search for IEEE Regions ...">
+      </form>
+      <!-- Regions Set -->
+      <ul data-role="listview" data-filter="true" data-input="#region" id="regionFilter" data-inset="true"></ul>
+    </div>
+  </div>
+
+  <!-- Branches Page -->
+  <div data-role="page" id="branchPage">
+    <div data-role="header" data-position="fixed">
+      <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+      <h2>IEEE Branches</h2>
+    </div>
+    <div data-role="main" class="ui-content">
+      <br> <br>
+      <!-- Branches Set -->
+      <form class="ui-filterable">
+        <input id="branch" data-type="search" placeholder="Search for IEEE Branches ...">
+      </form>
+      <div data-role="collapsibleset" data-filter="true" data-inset="true" id="BranchFilter" data-input="#branch"></div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div data-role="page" id="mapPage">
+    <div data-role="header" data-position="fixed">
+      <a href="#branchPage" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+      <h2>IEEE Branches</h2>
+    </div>
+    <div data-role="main" class="ui-content" id="map-canvas"></div>
+  </div>
+  <script src="js/initOptions.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/messages.js"></script>
+  <script src='js/swipe.js'></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+NOTES:
+1- create file with url "www.ieee-cusb.org/ieee_sections/read.php".
+2- IN php folder, you will find example of how you should send the data to the application
+	and this example is working fine. 
+3- I have used some of ibm worklight libraries such as adapters to fetch the data so
+	we have to use ibm worklight to generate the apk.
+4- be careful when you modify main.js because all my work is there.
